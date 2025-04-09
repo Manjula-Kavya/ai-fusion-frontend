@@ -1,0 +1,148 @@
+/* sumarize popup*/
+.popup {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5vh;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 2147483647;
+  width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.popup-content {
+  position: relative;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+.close-button {
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #4fd1ba;
+}
+
+.compose-dropdown-container {
+  padding: 10px 5px;
+}
+
+.stream-text-container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 3vh;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.compose-dialog-container {
+  width: 100vh;
+  margin: auto;
+}
+
+.compose-dialog-title {
+  width: 100%;
+}
+
+.attach-textarea-send-container {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: start;
+  align-items: start;
+  width: auto;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.icon-container {
+  padding: 10px 5px;
+  padding-top: 19px;
+}
+
+.attach-container {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.input-container {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding-top: 13px;
+}
+
+.input-field {
+  color: rgba(0, 0, 0, 0.87) !important;
+  margin: 0px !important;
+  border: 0px !important;
+  outline: 0px !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  width: 100%;
+  overflow: hidden auto;
+  resize: none;
+  cursor: text;
+  height: 24px;
+  border-radius: 4px;
+  max-height: unset;
+  min-height: 24px;
+  padding: 8px;
+  padding-top: 10px;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.send-button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.send-button svg {
+  fill: currentColor;
+  width: 22px;
+  height: 22px;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+}
+
+.blur {
+  filter: blur(4px);
+  pointer-events: none;
+}

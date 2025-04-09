@@ -1,0 +1,172 @@
+/* Replay Button CSS */
+
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.reply-button {
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4fd1ba;
+}
+
+.customReplyButton {
+  padding-left: 10px;
+}
+
+.reply-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.box {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 150%;
+  transform: translateX(-50%);
+  z-index: 2147483602;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  width: 240px;
+  max-height: 327px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2vh;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none !important;
+}
+
+.box-button {
+  padding: 5px 10px;
+
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  background-color: transparent;
+}
+
+.box-button:hover {
+  background-color: #4fd1ba;
+}
+
+.reply-popup-title-container {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+  pointer-events: none;
+}
+
+.title-reply-popup-box {
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Summarize Button CSS */
+
+.custom-summarize-button {
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4fd1ba;
+}
+
+.custom-summarizes-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  order: 1;
+  position: relative;
+}
+
+.hj {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Compose Button CSS */
+
+.gmail-compose-button {
+  color: black;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4fd1ba;
+}
+
+.compose-td {
+  padding: 10px 10px;
+}
+
+.compose-button-box-container {
+  position: relative;
+  display: inline-block;
+}
+
+.compose-box {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: 0;
+  z-index: 2147483602;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  width: 240px;
+  max-height: 327px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px,
+    rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
+  outline: none !important;
+}
+
+.compose-box-button {
+  padding: 5px 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.compose-box-button:hover {
+  background-color: #4fd1ba;
+}

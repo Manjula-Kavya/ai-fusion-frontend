@@ -1,0 +1,97 @@
+.access-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 500px;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: 2.2s cubic-bezier(0.36, -0.01, 0, 0.77);
+}
+
+.access-bar.open {
+  transform: translateX(0);
+  z-index: 2147483647;
+}
+
+.search-ai-root-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  height: 100vh;
+}
+
+.title-logo-section {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 8px;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.search-ai-title {
+  margin: 0px;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  color: #40b5ad;
+  color: #40b5ad;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.search-ai-logo {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: inherit;
+  font-size: 28px;
+}
+
+.text-area {
+  padding: 8px;
+  max-height: unset;
+  font-size: 16px;
+  line-height: 24px;
+  height: 88px;
+  width: 100%;
+  resize: none;
+  overflow: hidden auto;
+  color: rgba(0, 0, 0, 0.87) !important;
+  background: transparent !important;
+  margin: 0px !important;
+  border: 0px !important;
+  outline: 0px !important;
+  box-shadow: none !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 7em;
+  text-align: justify;
+  padding-right: 1em;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.block-with-text:before {
+  content: "…";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.block-with-text:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 8em;
+  margin-top: 0.2em;
+  background: white;
+}
